@@ -3,93 +3,93 @@ body {
 }
 
 .bg-gray-100 {
-    background-color: #f3f4f6; /* Tailwind класс */
+    background-color: #f3f4f6;
 }
 
 .p-6 {
-    padding: 1.5rem; /* 24px, Tailwind класс */
+    padding: 1.5rem;
 }
 
 .container {
-    max-width: 1280px; /* Tailwind класс */
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .mx-auto {
-    margin-left: auto; /* Tailwind класс */
-    margin-right: auto; /* Tailwind класс */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bg-white {
-    background-color: #fff; /* Tailwind класс */
+    background-color: #fff;
 }
 
 .rounded-lg {
-    border-radius: 0.75rem; /* 12px, Tailwind класс */
+    border-radius: 0.75rem;
 }
 
 .shadow-md {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Tailwind класс */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .text-2xl {
-    font-size: 1.5rem; /* 24px, Tailwind класс */
-    line-height: 2rem; /* 32px, Tailwind класс */
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .font-semibold {
-    font-weight: 600; /* Tailwind класс */
+    font-weight: 600;
 }
 
 .text-center {
-    text-align: center; /* Tailwind класс */
+    text-align: center;
 }
 
 .text-gray-800 {
-    color: #1e293b; /* Tailwind класс */
+    color: #1e293b;
 }
 
 .mb-6 {
-    margin-bottom: 1.5rem; /* 24px, Tailwind класс */
+    margin-bottom: 1.5rem;
 }
 
 .text-gray-600 {
-    color: #4b5563; /* Tailwind класс */
+    color: #4b5563;
 }
 
 .mb-8 {
-    margin-bottom: 2rem; /* 32px, Tailwind класс */
+    margin-bottom: 2rem;
 }
 
 .grid {
-    display: grid; /* Tailwind класс */
+    display: grid;
 }
 
 .grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr)); /* Tailwind класс */
+    grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .md\:grid-cols-2 {
     @media (min-width: 768px) {
-        grid-template-columns: repeat(2, minmax(0, 1fr)); /* Tailwind класс */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 .lg\:grid-cols-3 {
     @media (min-width: 1024px) {
-        grid-template-columns: repeat(3, minmax(0, 1fr)); /* Tailwind класс */
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
 .gap-6 {
-    gap: 1.5rem; /* 24px, Tailwind класс */
+    gap: 1.5rem;
 }
 
-.kingdom-card { /* Используем .kingdom-card */
+.kingdom-card {
     background-color: #fff;
     border-radius: 0.75rem; /* 12px */
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); /* Tailwind для shadow-sm */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
     padding: 1.5rem; /* 24px */
     display: flex;
     flex-direction: column;
@@ -98,34 +98,34 @@ body {
 
 
 .text-xl {
-    font-size: 1.25rem; /* 20px, Tailwind класс */
-    line-height: 1.75rem; /* 28px, Tailwind класс */
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 
 .font-semibold {
-    font-weight: 600; /* Tailwind класс */
+    font-weight: 600;
 }
 
 .text-gray-700 {
-    color: #374151; /* Tailwind класс */
+    color: #374151;
 }
 
 .mb-4 {
-    margin-bottom: 1rem; /* 16px, Tailwind класс */
+    margin-bottom: 1rem;
 }
 
 .text-gray-600 {
-    color: #4b5563; /* Tailwind класс */
+    color: #4b5563;
 }
 
-.change-color { /* Этот класс уже есть, но мы его расширим */
-    color: blue; /* По умолчанию синий */
+.change-color {
+    color: blue;
 }
 .change-color.increase {
     color: green;
 }
 .change-color.decrease {
-    color: #FFA500; /* Оранжевый цвет */
+    color: #FFA500;
 }
 .change-color.no-change {
     color: blue;

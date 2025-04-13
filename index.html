@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Население Вестероса (Текущий Год)</title>
+    <title>Население Вестероса</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -81,11 +81,10 @@
     </div>
 
     <script>
-        // Функция для обновления цвета изменения населения
         function updatePopulationChangeColor(elementId, change) {
             const element = document.getElementById(elementId);
             if (element) {
-                element.classList.add('change-color'); // Добавляем базовый класс
+                element.classList.add('change-color');
                 if (change.includes('+')) {
                     element.classList.add('increase');
                     element.classList.remove('decrease', 'no-change');
@@ -99,7 +98,6 @@
             }
         }
 
-        // Обновляем цвет для каждого королевства
         updatePopulationChangeColor('north-change', '+3%');
         updatePopulationChangeColor('riverlands-change', '-2%');
         updatePopulationChangeColor('westerlands-change', '0%');
