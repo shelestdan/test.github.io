@@ -1,12 +1,23 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.table-container {
+    overflow-x: auto;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 th, td {
@@ -16,24 +27,41 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #f8f9fa;
+    font-weight: bold;
 }
 
-/* Цвета строк */
+/* Цветовые классы */
 .orange {
-    background-color: #FFD70033;
-    color: #FF4500;
+    background-color: #ffd70033;
+    color: #ff4500;
 }
+
 .blue {
-    background-color: #0000FF33;
-    color: #0000FF;
+    background-color: #0000ff33;
+    color: #0000ff;
 }
+
 .green {
-    background-color: #90EE9033;
+    background-color: #90ee9033;
     color: #008000;
 }
 
 .legend {
     margin-top: 20px;
     font-weight: bold;
+    text-align: center;
+}
+
+/* Стрелки */
+.arrow-down {
+    color: #ff4500;
+}
+
+.arrow-up {
+    color: #008000;
+}
+
+.arrow-flat {
+    color: #0000ff;
 }
