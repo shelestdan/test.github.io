@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Цвета строк */
+.orange {
+    background-color: #FFD70033;
+    color: #FF4500;
+}
+.blue {
+    background-color: #0000FF33;
+    color: #0000FF;
+}
+.green {
+    background-color: #90EE9033;
+    color: #008000;
+}
+
+.legend {
+    margin-top: 20px;
+    font-weight: bold;
+}
