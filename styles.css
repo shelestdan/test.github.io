@@ -1,67 +1,132 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
 }
 
-h1 {
-    color: #2c3e50;
-    text-align: center;
+.bg-gray-100 {
+    background-color: #f3f4f6; /* Tailwind класс */
 }
 
-.table-container {
-    overflow-x: auto;
+.p-6 {
+    padding: 1.5rem; /* 24px, Tailwind класс */
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+.container {
+    max-width: 1280px; /* Tailwind класс */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-th, td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #ddd;
+.mx-auto {
+    margin-left: auto; /* Tailwind класс */
+    margin-right: auto; /* Tailwind класс */
 }
 
-th {
-    background-color: #f8f9fa;
-    font-weight: bold;
+.bg-white {
+    background-color: #fff; /* Tailwind класс */
 }
 
-/* Цветовые классы */
-.orange {
-    background-color: #ffd70033;
-    color: #fd8904;
+.rounded-lg {
+    border-radius: 0.75rem; /* 12px, Tailwind класс */
 }
 
-.blue {
-    background-color: #0000ff33;
-    color: #0000ff;
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Tailwind класс */
 }
 
-.green {
-    background-color: #90ee9033;
-    color: #008000;
+.text-2xl {
+    font-size: 1.5rem; /* 24px, Tailwind класс */
+    line-height: 2rem; /* 32px, Tailwind класс */
 }
 
-.legend {
-    margin-top: 20px;
-    font-weight: bold;
-    text-align: center;
+.font-semibold {
+    font-weight: 600; /* Tailwind класс */
 }
 
-/* Стрелки */
-.arrow-down {
-    color: #ff9100;
+.text-center {
+    text-align: center; /* Tailwind класс */
 }
 
-.arrow-up {
-    color: #008000;
+.text-gray-800 {
+    color: #1e293b; /* Tailwind класс */
 }
 
-.arrow-flat {
-    color: #0000ff;
+.mb-6 {
+    margin-bottom: 1.5rem; /* 24px, Tailwind класс */
+}
+
+.text-gray-600 {
+    color: #4b5563; /* Tailwind класс */
+}
+
+.mb-8 {
+    margin-bottom: 2rem; /* 32px, Tailwind класс */
+}
+
+.grid {
+    display: grid; /* Tailwind класс */
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* Tailwind класс */
+}
+
+.md\:grid-cols-2 {
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* Tailwind класс */
+    }
+}
+
+.lg\:grid-cols-3 {
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* Tailwind класс */
+    }
+}
+
+.gap-6 {
+    gap: 1.5rem; /* 24px, Tailwind класс */
+}
+
+.kingdom-card { /* Используем .kingdom-card */
+    background-color: #fff;
+    border-radius: 0.75rem; /* 12px */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); /* Tailwind для shadow-sm */
+    padding: 1.5rem; /* 24px */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.text-xl {
+    font-size: 1.25rem; /* 20px, Tailwind класс */
+    line-height: 1.75rem; /* 28px, Tailwind класс */
+}
+
+.font-semibold {
+    font-weight: 600; /* Tailwind класс */
+}
+
+.text-gray-700 {
+    color: #374151; /* Tailwind класс */
+}
+
+.mb-4 {
+    margin-bottom: 1rem; /* 16px, Tailwind класс */
+}
+
+.text-gray-600 {
+    color: #4b5563; /* Tailwind класс */
+}
+
+.change-color { /* Этот класс уже есть, но мы его расширим */
+    color: blue; /* По умолчанию синий */
+}
+.change-color.increase {
+    color: green;
+}
+.change-color.decrease {
+    color: #FFA500; /* Оранжевый цвет */
+}
+.change-color.no-change {
+    color: blue;
 }

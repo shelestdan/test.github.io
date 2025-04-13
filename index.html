@@ -1,67 +1,113 @@
 <!DOCTYPE html>
-<html>
-<h1>Население королевств Вестероса за 2024 год</h1>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Королевство</th>
-                    <th>Население в 2023</th>
-                    <th>Население в 2024</th>
-                    <th>Изменение</th>
-                    <th>Статус</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Королевство Семи -->
-                <tr class="orange">
-                    <td>Королевство Семи</td>
-                    <td>15,000,000</td>
-                    <td>14,800,000</td>
-                    <td><span class="arrow-down">↓</span> -200,000 (1.3%)</td>
-                    <td>Сокращение</td>
-                </tr>
-                
-                <!-- Долина -->
-                <tr class="blue">
-                    <td>Долина</td>
-                    <td>8,500,000</td>
-                    <td>8,500,000</td>
-                    <td><span class="arrow-flat">→</span> 0%</td>
-                    <td>Стабильность</td>
-                </tr>
-                
-                <!-- Север -->
-                <tr class="green">
-                    <td>Север</td>
-                    <td>3,200,000</td>
-                    <td>3,400,000</td>
-                    <td><span class="arrow-up">↑</span> +200,000 (6.25%)</td>
-                    <td>Рост</td>
-                </tr>
-                
-                <!-- Вольные Города -->
-                <tr class="orange">
-                    <td>Вольные Города</td>
-                    <td>4,100,000</td>
-                    <td>4,050,000</td>
-                    <td><span class="arrow-down">↓</span> -50,000 (1.2%)</td>
-                    <td>Сокращение</td>
-                </tr>
-                
-                <!-- Дорн -->
-                <tr class="green">
-                    <td>Дорн</td>
-                    <td>6,000,000</td>
-                    <td>6,300,000</td>
-                    <td><span class="arrow-up">↑</span> +300,000 (5%)</td>
-                    <td>Рост</td>
-                </tr>
-            </tbody>
-        </table>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Население Вестероса (Текущий Год)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> </head>
+<body class="bg-gray-100 p-6">
+    <div class="container mx-auto p-8 bg-white rounded-lg shadow-md">
+        <h1 class="text-2xl font-semibold text-center text-gray-800 mb-6">Население Королевств Вестероса (Текущий Год)</h1>
+        <p class="text-center text-gray-600 mb-8">Данные о населении и его изменении по сравнению с 2023 годом</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="kingdom-card bg-white rounded-lg shadow-sm p-6 flex flex-col justify-between">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Север</h2>
+                <div class="text-gray-600">
+                    <p>Население: <span id="north-population">8,000,000</span></p>
+                    <p>Изменение к 2023: <span id="north-change" class="change-color increase">+3%</span></p>
+                </div>
+            </div>
+
+            <div class="kingdom-card bg-white rounded-lg shadow-sm p-6 flex flex-col justify-between">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Речные Земли</h2>
+                <div class="text-gray-600">
+                    <p>Население: <span id="riverlands-population">6,500,000</span></p>
+                    <p>Изменение к 2023: <span id="riverlands-change" class="change-color decrease">-2%</span></p>
+                </div>
+            </div>
+
+            <div class="kingdom-card bg-white rounded-lg shadow-sm p-6 flex flex-col justify-between">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Западные Земли</h2>
+                <div class="text-gray-600">
+                    <p>Население: <span id="westerlands-population">7,000,000</span></p>
+                    <p>Изменение к 2023: <span id="westerlands-change" class="change-color no-change">0%</span></p>
+                </div>
+            </div>
+
+            <div class="kingdom-card bg-white rounded-lg shadow-sm p-6 flex flex-col justify-between">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Долина Аррен</h2>
+                 <div class="text-gray-600">
+                    <p>Население: <span id="valleylands-population">5,500,000</span></p>
+                    <p>Изменение к 2023: <span id="valleylands-change" class="change-color increase">+5%</span></p>
+                </div>
+            </div>
+
+            <div class="kingdom-card bg-white rounded-lg shadow-sm p-6 flex flex-col justify-between">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Простор</h2>
+                <div class="text-gray-600">
+                    <p>Население: <span id="reach-population">12,000,000</span></p>
+                    <p>Изменение к 2023: <span id="reach-change" class="change-color increase">+4%</span></p>
+                </div>
+            </div>
+
+            <div class="kingdom-card bg-white rounded-lg shadow-sm p-6 flex flex-col justify-between">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Штормовые Земли</h2>
+                <div class="text-gray-600">
+                    <p>Население: <span id="stormlands-population">4,000,000</span></p>
+                    <p>Изменение к 2023: <span id="stormlands-change" class="change-color decrease">-1%</span></p>
+                </div>
+            </div>
+
+            <div class="kingdom-card bg-white rounded-lg shadow-sm p-6 flex flex-col justify-between">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Королевские Земли</h2>
+                <div class="text-gray-600">
+                    <p>Население: <span id="crownlands-population">9,000,000</span></p>
+                    <p>Изменение к 2023: <span id="crownlands-change" class="change-color no-change">0%</span></p>
+                </div>
+            </div>
+
+             <div class="kingdom-card bg-white rounded-lg shadow-sm p-6 flex flex-col justify-between">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Дорн</h2>
+                <div class="text-gray-600">
+                    <p>Население: <span id="dorne-population">3,000,000</span></p>
+                    <p>Изменение к 2023: <span id="dorne-change" class="change-color increase">+6%</span></p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="legend">
-        🟧 Оранжевый = Сокращение | 🔵 Синий = Стабильность | 🟢 Зеленый = Рост
-    </div>
+
+    <script>
+        // Функция для обновления цвета изменения населения
+        function updatePopulationChangeColor(elementId, change) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.classList.add('change-color'); // Добавляем базовый класс
+                if (change.includes('+')) {
+                    element.classList.add('increase');
+                    element.classList.remove('decrease', 'no-change');
+                } else if (change.includes('-')) {
+                    element.classList.add('decrease');
+                    element.classList.remove('increase', 'no-change');
+                } else {
+                    element.classList.add('no-change');
+                    element.classList.remove('increase', 'decrease');
+                }
+            }
+        }
+
+        // Обновляем цвет для каждого королевства
+        updatePopulationChangeColor('north-change', '+3%');
+        updatePopulationChangeColor('riverlands-change', '-2%');
+        updatePopulationChangeColor('westerlands-change', '0%');
+        updatePopulationChangeColor('valleylands-change', '+5%');
+        updatePopulationChangeColor('reach-change', '+4%');
+        updatePopulationChangeColor('stormlands-change', '-1%');
+        updatePopulationChangeColor('crownlands-change', '0%');
+        updatePopulationChangeColor('dorne-change', '+6%');
+    </script>
 </body>
 </html>
